@@ -1,0 +1,1117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Portugal · 4–13 October 2026</title>
+<style>
+  :root{
+    --ink:#1d2b36;
+    --ink-2:#4a5c6a;
+    --ink-3:#7d8d99;
+    --cream:#faf7f1;
+    --card:#ffffff;
+    --blue:#2c5f8d;
+    --blue-d:#1b3a5c;
+    --blue-l:#e8f0f7;
+    --terra:#c2643f;
+    --terra-l:#fbeee7;
+    --gold:#b8892b;
+    --gold-l:#fbf3e0;
+    --green:#4a7c59;
+    --green-l:#eaf3ec;
+    --line:#e3ddd2;
+    --shadow:0 1px 2px rgba(29,43,54,.05),0 4px 16px rgba(29,43,54,.06);
+    --radius:14px;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth;scroll-padding-top:74px}
+  body{
+    margin:0;background:var(--cream);color:var(--ink);
+    font:16px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Roboto,Helvetica,Arial,sans-serif;
+    -webkit-font-smoothing:antialiased;
+  }
+  h1,h2,h3,h4{line-height:1.2;margin:0;font-weight:650;letter-spacing:-.015em}
+  a{color:var(--blue);text-decoration:none;border-bottom:1px solid rgba(44,95,141,.28)}
+  a:hover{border-bottom-color:var(--blue)}
+  .wrap{max-width:1040px;margin:0 auto;padding:0 22px}
+
+  /* ---------- nav ---------- */
+  nav{
+    position:sticky;top:0;z-index:50;background:rgba(250,247,241,.93);
+    backdrop-filter:saturate(180%) blur(12px);border-bottom:1px solid var(--line);
+  }
+  nav .wrap{display:flex;align-items:center;gap:6px;height:56px;overflow-x:auto;scrollbar-width:none}
+  nav .wrap::-webkit-scrollbar{display:none}
+  nav .brand{font-weight:700;margin-right:14px;white-space:nowrap;font-size:15px}
+  nav a{
+    border:0;padding:6px 11px;border-radius:8px;color:var(--ink-2);
+    font-size:14px;font-weight:550;white-space:nowrap;
+  }
+  nav a:hover{background:var(--blue-l);color:var(--blue-d)}
+
+  /* ---------- hero ---------- */
+  header.hero{
+    background:linear-gradient(160deg,var(--blue-d) 0%,var(--blue) 62%,#3d7ba8 100%);
+    color:#fff;padding:52px 0 44px;
+  }
+  header.hero h1{font-size:clamp(30px,5.2vw,46px);letter-spacing:-.03em}
+  header.hero .sub{opacity:.82;margin-top:10px;font-size:17px}
+  .facts{display:grid;grid-template-columns:repeat(auto-fit,minmax(155px,1fr));gap:12px;margin-top:30px}
+  .fact{background:rgba(255,255,255,.11);border:1px solid rgba(255,255,255,.16);border-radius:11px;padding:13px 15px}
+  .fact .k{font-size:11px;text-transform:uppercase;letter-spacing:.09em;opacity:.72}
+  .fact .v{font-size:15px;font-weight:650;margin-top:3px}
+
+  /* ---------- sections ---------- */
+  section{padding:44px 0 8px}
+  .shead{display:flex;align-items:baseline;gap:12px;margin-bottom:6px}
+  .shead h2{font-size:26px}
+  .shead .n{color:var(--terra);font-weight:700;font-size:13px;letter-spacing:.1em}
+  .lede{color:var(--ink-2);margin:8px 0 24px;max-width:70ch}
+
+  .card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow)}
+
+  /* ---------- day / night strip ---------- */
+  .stripbox{
+    background:var(--card);border:1px solid var(--line);border-radius:var(--radius);
+    box-shadow:var(--shadow);padding:20px 18px 16px;margin-bottom:24px;overflow-x:auto;
+  }
+  .strip{min-width:840px}
+  .striprow{display:grid;grid-template-columns:repeat(20,1fr)}
+
+  .rowlbl{font-size:10px;font-weight:700;letter-spacing:.13em;text-transform:uppercase;
+    color:var(--ink-3);margin:0 0 6px 3px}
+  .rowlbl.n{margin-top:2px}
+
+  .dcell{
+    grid-column:span 2;margin:0 3px;border-radius:9px;padding:8px 4px 9px;text-align:center;
+    border:1px solid var(--line);background:#fcfaf6;
+  }
+  .dcell .dw{font-size:9.5px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-3)}
+  .dcell .dd{font-size:19px;font-weight:700;line-height:1.15;color:var(--ink)}
+  .dcell .dl{font-size:9.5px;font-weight:650;line-height:1.25;margin-top:3px;color:var(--ink-2)}
+
+  .d-porto {background:var(--blue-l); border-color:#cfe0ee}
+  .d-douro {background:var(--gold-l); border-color:#efe0bd}
+  .d-coim  {background:var(--green-l);border-color:#cfe4d5}
+  .d-lis   {background:var(--terra-l);border-color:#f3d8c9}
+  .d-po-do {background:linear-gradient(100deg,var(--blue-l) 42%,var(--gold-l) 58%); border-color:#ded9cb}
+  .d-do-co {background:linear-gradient(100deg,var(--gold-l) 42%,var(--green-l) 58%);border-color:#ded9cb}
+  .d-co-li {background:linear-gradient(100deg,var(--green-l) 42%,var(--terra-l) 58%);border-color:#ded9cb}
+
+  .ticks{grid-column:1 / span 20;height:13px;position:relative;margin:0 3px}
+  .ticks span{position:absolute;top:0;width:1px;height:13px;background:#d8d1c4}
+
+  .ncell{
+    margin:0 3px;border-radius:8px;padding:6px 4px 7px;text-align:center;
+    border:1px solid transparent;font-size:11.5px;font-weight:650;line-height:1.2;
+  }
+  .ncell .ni{display:block;font-size:8.5px;font-weight:700;letter-spacing:.11em;
+    text-transform:uppercase;opacity:.6;margin-bottom:1px}
+  .n-porto {background:var(--blue-l); color:var(--blue-d);border-color:#b9d2e6}
+  .n-douro {background:var(--gold-l); color:#7a5a12; border-color:#e4cf9f}
+  .n-coim  {background:var(--green-l);color:#2f5639; border-color:#bcd8c4}
+  .n-lisbon{background:var(--terra-l);color:#8f4526; border-color:#eec5b0}
+
+  .striplegend{font-size:12.5px;color:var(--ink-3);margin-top:14px;display:flex;
+    flex-wrap:wrap;gap:16px;align-items:center}
+  .striplegend b{color:var(--ink-2);font-weight:650}
+
+  /* ---------- day cards ---------- */
+  .day{margin-bottom:16px;overflow:hidden}
+  .day > summary{
+    list-style:none;cursor:pointer;padding:16px 20px;display:flex;gap:14px;align-items:center;
+    transition:background .14s;
+  }
+  .day > summary::-webkit-details-marker{display:none}
+  .day > summary:hover{background:#fcfaf6}
+  .day[open] > summary{border-bottom:1px solid var(--line)}
+  .chip{
+    flex:0 0 auto;width:56px;height:56px;border-radius:11px;display:flex;flex-direction:column;
+    align-items:center;justify-content:center;font-weight:700;line-height:1.1;
+  }
+  .chip .dw{font-size:10px;letter-spacing:.06em;opacity:.75;text-transform:uppercase}
+  .chip .dn{font-size:20px}
+  .c-porto{background:var(--blue-l);color:var(--blue-d)}
+  .c-douro{background:var(--gold-l);color:#7a5a12}
+  .c-coim{background:var(--green-l);color:#2f5639}
+  .c-lisbon{background:var(--terra-l);color:#8f4526}
+  .dmeta{flex:1;min-width:0}
+  .dmeta h3{font-size:17px}
+  .dmeta .where{font-size:13px;color:var(--ink-3);margin-top:3px}
+  .caret{flex:0 0 auto;color:var(--ink-3);font-size:13px;transition:transform .18s}
+  .day[open] .caret{transform:rotate(90deg)}
+  .dbody{padding:6px 20px 20px}
+
+  table.sched{width:100%;border-collapse:collapse;margin-top:8px;font-size:14.5px}
+  table.sched td{padding:8px 6px;border-bottom:1px solid #f0ece4;vertical-align:top}
+  table.sched tr:last-child td{border-bottom:0}
+  table.sched td.t{
+    width:82px;white-space:nowrap;font-variant-numeric:tabular-nums;
+    color:var(--blue);font-weight:650;font-size:13.5px;padding-top:9px;
+  }
+
+  .note{
+    margin-top:14px;padding:11px 14px;border-radius:9px;font-size:13.5px;line-height:1.55;
+    background:var(--blue-l);color:var(--blue-d);border-left:3px solid var(--blue);
+  }
+  .note.warn{background:var(--terra-l);color:#8f4526;border-left-color:var(--terra)}
+  .note.new{background:var(--green-l);color:#2f5639;border-left-color:var(--green)}
+  .note b{font-weight:700}
+
+  /* ---------- generic table ---------- */
+  table.grid{width:100%;border-collapse:collapse;font-size:14.5px;background:var(--card);
+    border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow)}
+  table.grid th{
+    text-align:left;padding:11px 14px;background:#f4efe6;font-size:12px;
+    text-transform:uppercase;letter-spacing:.07em;color:var(--ink-2);font-weight:700;
+  }
+  table.grid td{padding:11px 14px;border-top:1px solid var(--line);vertical-align:top}
+  table.grid tr:hover td{background:#fcfaf6}
+
+  /* ---------- flags ---------- */
+  .flag{padding:16px 18px;margin-bottom:12px;border-radius:var(--radius);border:1px solid var(--line);
+    background:var(--card);box-shadow:var(--shadow);border-left:4px solid var(--terra)}
+  .flag.rec{border-left-color:var(--green)}
+  .flag.info{border-left-color:var(--blue)}
+  .flag.done{border-left-color:var(--ink-3)}
+  .flag h4{font-size:15.5px;margin-bottom:5px;display:flex;gap:8px;align-items:center;flex-wrap:wrap}
+  .flag .pill{font-size:10px;text-transform:uppercase;letter-spacing:.08em;padding:2px 7px;
+    border-radius:5px;background:var(--terra-l);color:#8f4526;font-weight:700}
+  .flag.rec .pill{background:var(--green-l);color:#2f5639}
+  .flag.info .pill{background:var(--blue-l);color:var(--blue-d)}
+  .flag.done .pill{background:#ebe7de;color:#6b7780}
+  .flag p{margin:5px 0 0;font-size:14.5px;color:var(--ink-2)}
+
+  /* ---------- checklist ---------- */
+  .todo{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);
+    box-shadow:var(--shadow);overflow:hidden}
+  .todo h4{padding:13px 18px;background:#f4efe6;font-size:12.5px;text-transform:uppercase;
+    letter-spacing:.08em;color:var(--ink-2)}
+  .todo label{display:flex;gap:11px;padding:11px 18px;border-top:1px solid var(--line);
+    cursor:pointer;font-size:14.5px;align-items:flex-start;transition:background .12s}
+  .todo label:hover{background:#fcfaf6}
+  .todo input{margin-top:4px;width:16px;height:16px;accent-color:var(--blue);flex:0 0 auto;cursor:pointer}
+  .todo input:checked + span{text-decoration:line-through;color:var(--ink-3)}
+  .todo .when{font-size:11.5px;color:var(--terra);font-weight:700;letter-spacing:.04em;
+    text-transform:uppercase;display:block;margin-top:2px}
+  .prog{padding:11px 18px;border-top:1px solid var(--line);font-size:13px;color:var(--ink-3);
+    display:flex;justify-content:space-between;align-items:center;background:#fcfaf6}
+  .prog button{border:1px solid var(--line);background:#fff;border-radius:7px;padding:4px 10px;
+    font:inherit;font-size:12px;color:var(--ink-2);cursor:pointer}
+
+  .bk{display:inline-block;font-size:10px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;
+    padding:2px 7px;border-radius:5px;background:var(--green-l);color:#2f5639;
+    border:1px solid #bcd8c4;vertical-align:1px;margin-right:4px}
+
+  .cols{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+  @media(max-width:760px){.cols{grid-template-columns:1fr}}
+
+  .maps{display:flex;flex-wrap:wrap;gap:9px;margin-top:6px}
+  .maps a{border:1px solid var(--line);background:var(--card);border-radius:9px;padding:8px 13px;
+    font-size:13.5px;font-weight:600;box-shadow:var(--shadow)}
+  .maps a:hover{border-color:var(--blue);background:var(--blue-l)}
+  .maps a.alt{font-weight:500;color:var(--ink-2)}
+
+  footer{margin-top:56px;padding:26px 0 40px;border-top:1px solid var(--line);
+    color:var(--ink-3);font-size:13px}
+
+  @media print{
+    nav,.caret,.prog button{display:none}
+    body{background:#fff}
+    .day{break-inside:avoid}
+    .day > summary{background:#f6f6f6}
+    details{display:block}
+    details > summary{list-style:none}
+    .dbody{display:block !important}
+    .stripbox{overflow:visible}
+    .strip{min-width:0}
+    header.hero{background:#1b3a5c !important;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+    .dcell,.ncell{-webkit-print-color-adjust:exact;print-color-adjust:exact}
+  }
+</style>
+</head>
+<body>
+
+<nav><div class="wrap">
+  <span class="brand">🇵🇹 Portugal 2026</span>
+  <a href="#plan">Shape</a>
+  <a href="#days">Day by day</a>
+  <a href="#stay">Stays</a>
+  <a href="#eat">Food</a>
+  <a href="#flags">Flags</a>
+  <a href="#todo">To book</a>
+  <a href="#refs">Sources</a>
+</div></nav>
+
+<header class="hero"><div class="wrap">
+  <h1>Portugal</h1>
+  <div class="sub">4 – 13 October 2026 · Porto → Douro → Buçaco → Batalha → Lisbon</div>
+  <div class="facts">
+    <div class="fact"><div class="k">Arrive</div><div class="v">OPO · Sun 4, 09:00</div></div>
+    <div class="fact"><div class="k">Depart</div><div class="v">LIS · Tue 13, 22:15</div></div>
+    <div class="fact"><div class="k">Nights</div><div class="v">9 · five bases</div></div>
+    <div class="fact"><div class="k">Travellers</div><div class="v">2 adults</div></div>
+    <div class="fact"><div class="k">Style</div><div class="v">Cities · nature · food</div></div>
+    <div class="fact"><div class="k">Note</div><div class="v">No wine tastings</div></div>
+  </div>
+</div></header>
+
+<!-- ============ SHAPE ============ -->
+<section id="plan"><div class="wrap">
+  <div class="shead"><span class="n">01</span><h2>The shape of the trip</h2></div>
+  <p class="lede">Ten days along the top; the nine nights sit in the gaps between them. Each night label
+  straddles the two days it joins, so you can read where you go to bed and where you wake up.
+  <b>Five bases</b> — Porto, one night in the Douro, one in Coimbra, one in Batalha, then Lisbon for the
+  rest. The middle of the trip is now three single nights in a row, which is the price of the coast:
+  Batalha on the 8th turns Friday from a four-stop scramble into a short, easy run to the airport
+  with a proper Nazaré afternoon in it.</p>
+
+  <div class="stripbox"><div class="strip">
+
+    <div class="rowlbl">Days</div>
+    <div class="striprow">
+      <div class="dcell d-porto"><div class="dw">Sun</div><div class="dd">4</div><div class="dl">Porto</div></div>
+      <div class="dcell d-porto"><div class="dw">Mon</div><div class="dd">5</div><div class="dl">Porto coast</div></div>
+      <div class="dcell d-po-do"><div class="dw">Tue</div><div class="dd">6</div><div class="dl">Arouca ▸ Douro</div></div>
+      <div class="dcell d-do-co"><div class="dw">Wed</div><div class="dd">7</div><div class="dl">Douro ▸ Coimbra</div></div>
+      <div class="dcell d-coim"><div class="dw">Thu</div><div class="dd">8</div><div class="dl">Buçaco ▸ Coimbra ▸ Batalha</div></div>
+      <div class="dcell d-co-li"><div class="dw">Fri</div><div class="dd">9</div><div class="dl">Alcobaça ▸ Nazaré ▸ Lisbon</div></div>
+      <div class="dcell d-lis"><div class="dw">Sat</div><div class="dd">10</div><div class="dl">Alfama &amp; Baixa</div></div>
+      <div class="dcell d-lis"><div class="dw">Sun</div><div class="dd">11</div><div class="dl">Belém</div></div>
+      <div class="dcell d-lis"><div class="dw">Mon</div><div class="dd">12</div><div class="dl">Sintra ▸ Cascais</div></div>
+      <div class="dcell d-lis"><div class="dw">Tue</div><div class="dd">13</div><div class="dl">Lisbon ✈ 22:15</div></div>
+    </div>
+
+    <div class="striprow"><div class="ticks">
+      <span style="left:10%"></span><span style="left:20%"></span><span style="left:30%"></span>
+      <span style="left:40%"></span><span style="left:50%"></span><span style="left:60%"></span>
+      <span style="left:70%"></span><span style="left:80%"></span><span style="left:90%"></span>
+    </div></div>
+
+    <div class="rowlbl n">Nights — each sits between the two days it joins</div>
+    <div class="striprow">
+      <div class="ncell n-porto"  style="grid-column:2 / span 2"><span class="ni">Night 1</span>Porto</div>
+      <div class="ncell n-porto"  style="grid-column:4 / span 2"><span class="ni">Night 2</span>Porto</div>
+      <div class="ncell n-douro"  style="grid-column:6 / span 2"><span class="ni">Night 3</span>Pinhão</div>
+      <div class="ncell n-coim"   style="grid-column:8 / span 2"><span class="ni">Night 4</span>Buçaco?</div>
+      <div class="ncell n-coim"   style="grid-column:10 / span 2"><span class="ni">Night 5</span>Batalha</div>
+      <div class="ncell n-lisbon" style="grid-column:12 / span 2"><span class="ni">Night 6</span>Lisbon</div>
+      <div class="ncell n-lisbon" style="grid-column:14 / span 2"><span class="ni">Night 7</span>Lisbon</div>
+      <div class="ncell n-lisbon" style="grid-column:16 / span 2"><span class="ni">Night 8</span>Lisbon</div>
+      <div class="ncell n-lisbon" style="grid-column:18 / span 2"><span class="ni">Night 9</span>Lisbon</div>
+    </div>
+
+    <div class="striplegend">
+      <span><b>2</b> Porto</span>
+      <span><b>1</b> Pinhão</span>
+      <span><b>1</b> Buçaco? · <b>1</b> Batalha</span>
+      <span><b>4</b> Lisbon</span>
+      <span style="margin-left:auto">Nazaré is now an afternoon stop, not a night</span>
+    </div>
+  </div></div>
+
+  <table class="grid">
+    <tr><th>Leg</th><th>Drive</th><th>Notes</th></tr>
+    <tr><td>Porto → Arouca</td><td>1h00</td><td>Car collected in Porto, Tue 6 Oct, 08:30</td></tr>
+    <tr><td>Arouca → Pinhão</td><td>1h50</td><td>Tue 6. The last 25 min is the <b>N222 Régua → Pinhão</b> — do it in daylight</td></tr>
+    <tr><td>Pinhão → Folgosa</td><td>0h25</td><td>Wed 7. The <b>N222 westbound</b> — the celebrated stretch, driven a second time in the other direction</td></tr>
+    <tr><td>Folgosa → Galafura → Coimbra</td><td>2h10</td><td>Wed 7 afternoon. Galafura is a 20-min detour above Régua and worth it; then A24 south past Viseu and the IP3 down</td></tr>
+    <tr><td>Luso/Buçaco → Coimbra</td><td>0h30</td><td>Thu 8 late morning, for the university and the Joanina</td></tr>
+    <tr><td>Coimbra → Conímbriga → Batalha</td><td>1h05</td><td>Thu 8 afternoon. Conímbriga is 20 min south of Coimbra and <b>directly on the road</b> — it costs no detour at all</td></tr>
+    <tr><td>Batalha → Alcobaça → Nazaré</td><td>0h50</td><td>Fri 9 morning, in two short hops</td></tr>
+    <tr><td>Nazaré → LIS airport</td><td>1h20</td><td>Fri evening. <b>The car goes back here — the only car of the trip</b>, then Uber into town</td></tr>
+    <tr><td colspan="3" style="background:#f4efe6;font-weight:650;font-size:13px">↓ Lisbon is car-free — trains, trams and Ubers only</td></tr>
+    <tr><td>Flat (Chiado) → Rossio station</td><td>0h08 walk</td><td>Mon 12. Downhill via Largo do Carmo — no funicular, no metro</td></tr>
+    <tr><td>Rossio → Sintra</td><td>0h40 rail</td><td>Mon 12. Trains every ~20 min, ~€2.40 each way</td></tr>
+    <tr><td>Sintra → Cabo da Roca → Cascais</td><td>~1h15 bus</td><td>Mon 12. Scotturb 1624 — <b>check the October timetable</b></td></tr>
+    <tr><td>Cascais → Cais do Sodré</td><td>0h40 rail</td><td>Mon 12 evening, trains every ~20 min</td></tr>
+    <tr><td>Lisbon → LIS airport</td><td>0h20 Uber</td><td>Tue 13, ~€15</td></tr>
+  </table>
+</div></section>
+
+<!-- ============ DAYS ============ -->
+<section id="days"><div class="wrap">
+  <div class="shead"><span class="n">02</span><h2>Day by day</h2></div>
+  <p class="lede">Click any day to open it. Times are targets, not commitments — the fixed points are
+  timed tickets and dinner reservations.</p>
+
+  <div class="maps">
+    <a href="https://maps.app.goo.gl/ZyrKf4DspRWNSQy5A" target="_blank" rel="noopener">🗺️ Porto · P2</a>
+    <a href="https://maps.app.goo.gl/MrC6umdpJ3DZuZ3W6" target="_blank" rel="noopener">🗺️ Middle · M1</a>
+    <a href="https://maps.app.goo.gl/T3rf62aHE4FRQcpf8" target="_blank" rel="noopener">🗺️ Lisbon · L1</a>
+  </div>
+  <div class="maps" style="margin-bottom:24px">
+    <a class="alt" href="https://maps.app.goo.gl/DXggKtZgLCLnq1W88" target="_blank" rel="noopener">alt · Porto P1</a>
+    <a class="alt" href="https://maps.app.goo.gl/bFPd3rB7B4BGqNnv5" target="_blank" rel="noopener">alt · Porto P3</a>
+    <a class="alt" href="https://maps.app.goo.gl/cxsweacFxdfHyYbK6" target="_blank" rel="noopener">alt · Middle M2</a>
+    <a class="alt" href="https://maps.app.goo.gl/ja9H6KcyMtUHb7CB7" target="_blank" rel="noopener">alt · Middle M3</a>
+    <a class="alt" href="https://maps.app.goo.gl/ZUPxG5dW89ABth1VA" target="_blank" rel="noopener">alt · Lisbon L2</a>
+    <a class="alt" href="https://maps.app.goo.gl/MWgRdxsyKiE6HzKg6" target="_blank" rel="noopener">alt · Lisbon L3</a>
+  </div>
+
+  <!-- SUN 4 -->
+  <details class="day card" open>
+    <summary>
+      <div class="chip c-porto"><span class="dw">Sun</span><span class="dn">4</span></div>
+      <div class="dmeta"><h3>Arrival and the historic centre</h3>
+        <div class="where">Porto · ends in <b>night 1 · Porto</b></div></div>
+      <span class="caret">▶</span>
+    </summary>
+    <div class="dbody">
+      <table class="sched">
+        <tr><td class="t">09:00</td><td>Land at OPO</td></tr>
+        <tr><td class="t">10:00</td><td>Uber to the <b>NOLIA Boutique Hotel</b> (~25 min from OPO, €20–25)</td></tr>
+        <tr><td class="t">10:30</td><td><b>Check in, shower, rest.</b> Standard check-in is 15:00 — ask NOLIA for an early room, or at minimum bag drop plus use of a bathroom. See the flag below</td></tr>
+        <tr><td class="t">11:45</td><td>Porto City Hall exterior, Avenida dos Aliados</td></tr>
+        <tr><td class="t">12:30</td><td>Lunch · Brasão Aliados</td></tr>
+        <tr><td class="t">13:45</td><td>Capela das Almas — blue-tiled facade</td></tr>
+        <tr><td class="t">14:30</td><td>Igreja de São Francisco — gilded interior and catacombs</td></tr>
+        <tr><td class="t">15:30</td><td>Palácio da Bolsa, guided visit</td></tr>
+        <tr><td class="t">16:45</td><td>São Bento station azulejos</td></tr>
+        <tr><td class="t">17:15</td><td>Porto Cathedral</td></tr>
+        <tr><td class="t">18:00</td><td>Fernandine Wall section from the public path, if accessible</td></tr>
+        <tr><td class="t">19:15</td><td>Sunset at Jardim do Morro</td></tr>
+        <tr><td class="t">20:30</td><td>Dinner · Gruta</td></tr>
+      </table>
+      <div class="note warn"><b>Sunday.</b> Restaurant options thin out — Gruta must be booked, not walked into.</div>
+    </div>
+  </details>
+
+  <!-- MON 5 -->
+  <details class="day card">
+    <summary>
+      <div class="chip c-porto"><span class="dw">Mon</span><span class="dn">5</span></div>
+      <div class="dmeta"><h3>Foz, Matosinhos and Leça</h3>
+        <div class="where">Porto coast · ends in <b>night 2 · Porto</b></div></div>
+      <span class="caret">▶</span>
+    </summary>
+    <div class="dbody">
+      <table class="sched">
+        <tr><td class="t">09:00</td><td>Livraria Lello, timed entry at opening</td></tr>
+        <tr><td class="t">10:15</td><td>Heritage Tram 1 along the river toward Foz</td></tr>
+        <tr><td class="t">11:00</td><td>Passeio Alegre and the Foz waterfront</td></tr>
+        <tr><td class="t">12:30</td><td>Seafood lunch · Meia-Nau, Matosinhos</td></tr>
+        <tr><td class="t">15:00</td><td>Piscina das Marés — Siza's tidal pools</td></tr>
+        <tr><td class="t">16:15</td><td>Casa de Chá da Boa Nova, exterior</td></tr>
+        <tr><td class="t">17:30</td><td>Back to the hotel, rest</td></tr>
+        <tr><td class="t">20:00</td><td>Dinner · Cozinha das Flores</td></tr>
+      </table>
+      <div class="note warn"><b>National holiday — Implantação da República.</b> State museums close Mondays anyway.
+      Reconfirm every restaurant and any indoor architectural visit.</div>
+    </div>
+  </details>
+
+  <!-- TUE 6 -->
+  <details class="day card">
+    <summary>
+      <div class="chip c-douro"><span class="dw">Tue</span><span class="dn">6</span></div>
+      <div class="dmeta"><h3>Paiva boardwalks and into the Douro</h3>
+        <div class="where">Arouca → Pinhão · ends in <b>night 3 · The Vintage House</b></div></div>
+      <span class="caret">▶</span>
+    </summary>
+    <div class="dbody">
+      <table class="sched">
+        <tr><td class="t">08:00</td><td>Check out of NOLIA</td></tr>
+        <tr><td class="t">08:30</td><td>Collect the rental car — pick a <b>downtown desk walkable from the hotel</b>, not the airport. <b>Confirm the Via Verde transponder</b></td></tr>
+        <tr><td class="t">09:45</td><td>Arrive Arouca</td></tr>
+        <tr><td class="t">10:00</td><td><b>Passadiços do Paiva</b> — 8.7 km of boardwalk along the Paiva gorge. Timed booking required</td></tr>
+        <tr><td class="t">13:00</td><td><b>Ponte 516 Arouca</b> — the suspension bridge, usually a combined ticket</td></tr>
+        <tr><td class="t">13:45</td><td>Late lunch in Arouca</td></tr>
+        <tr><td class="t">15:00</td><td>Drive to Pinhão, ~1h50 — the last stretch is the <b>N222 Régua → Pinhão</b>, so you get the best road in the country in late-afternoon light</td></tr>
+        <tr><td class="t">17:00</td><td>Check in at <b>The Vintage House</b>, Pinhão. Riverside lawn and pool — this is the only unhurried afternoon of the trip, so use it</td></tr>
+        <tr><td class="t">20:00</td><td><b>Dinner at the Rabelo</b>, in the hotel — <span class="bk">Booked</span> Nothing to arrange and nowhere to drive after a long day <span style="color:var(--terra)">(ask for the non-alcoholic pairing on the night)</span></td></tr>
+      </table>
+      <div class="note new"><b>This day is new.</b> It replaces the Peneda-Gerês night and the PR24 Sistelo
+      hike from the earlier draft, which the night structure no longer has room for. Paiva is the
+      substitute: comparable effort, it sits directly on the Porto→Douro line rather than 2h45 north of it,
+      and the gorge is arguably the more dramatic walk. Book the timed slot — it sells out.</div>
+      <div class="note warn"><b>Effort check.</b> Paiva is 8.7 km with a lot of stepped descent and ascent.
+      Allow three hours and don't schedule anything tight afterwards.</div>
+    </div>
+  </details>
+
+  <!-- WED 7 -->
+  <details class="day card">
+    <summary>
+      <div class="chip c-douro"><span class="dw">Wed</span><span class="dn">7</span></div>
+      <div class="dmeta"><h3>The Douro on foot in the morning, the N222 in the afternoon</h3>
+        <div class="where">Pinhão → Coimbra · ends in <b>night 4 · Coimbra</b></div></div>
+      <span class="caret">▶</span>
+    </summary>
+    <div class="dbody">
+      <table class="sched">
+        <tr><td class="t">07:45</td><td><b>Walk up to Casal de Loivos</b> — ~45–60 min and about 250 m of climb straight out of Pinhão, to what a lot of people call the best view in the Douro. Best light of the day, and this is the moderate hike the itinerary lost with Sistelo</td></tr>
+        <tr><td class="t">09:45</td><td>Back down; breakfast at the hotel</td></tr>
+        <tr><td class="t">10:45</td><td><b>Check out of The Vintage House</b>, bags in the car</td></tr>
+        <tr><td class="t">11:00</td><td><b>One-hour rabelo cruise</b> from the Pinhão quay — two minutes' walk. Book the day before at the quay or online; departures are roughly hourly</td></tr>
+        <tr><td class="t">12:15</td><td>Pinhão station <b>azulejo panels</b> and the riverfront — twenty minutes, and it's on the way back to the car</td></tr>
+        <tr><td class="t">12:45</td><td>Drive the <b>N222 west to Folgosa</b>, ~25 min. You did this road inbound in evening light; you get it again from the other side</td></tr>
+        <tr><td class="t">13:15</td><td><b>Lunch at DOC</b>, Rui Paula's glass room on the water at Folgosa — <b>request the non-alcoholic pairing</b>. Allow two hours and take the terrace <span style="color:var(--terra)">(book)</span></td></tr>
+        <tr><td class="t">15:20</td><td>On west; <b>Miradouro de São Leonardo de Galafura</b> above Régua, a 20-min detour — the view that explains the whole valley, and your goodbye to it</td></tr>
+        <tr><td class="t">16:20</td><td>Drive to <b>Luso</b>, ~1h50 — A24 south past Viseu, then west and down to the A1. Within about ten minutes of the Coimbra route the whole way</td></tr>
+        <tr><td class="t">18:20</td><td><b>Check in at the Palace Hotel do Bussaco</b>, inside the walled forest. Neo-Manueline, built 1888–1907 as a royal hunting retreat, azulejo panels the length of the staircase. <b>Ask for a renovated room</b> — the fabric is uneven, same caveat as the Vintage House</td></tr>
+        <tr><td class="t">19:00</td><td>Walk out into the forest while there's light — the Fonte Fria cascade is ten minutes from the door and you'll have it to yourself once the day visitors have gone</td></tr>
+        <tr><td class="t">20:00</td><td><b>Dinner in the hotel dining room</b> — the room is the reason. <span style="color:var(--terra)">Alternative: <b>leitão à Bairrada at Mealhada</b>, 10 min away — Rei dos Leitões or Pedro dos Leitões — but only if the DOC lunch was light. Two big meals in one day is a lot</span></td></tr>
+      </table>
+      <div class="note new"><b>The morning is still entirely on foot.</b> Cruise quay, station and the
+      Casal de Loivos trailhead are all a few minutes from the Vintage House door, so the car doesn't
+      move until 12:45. <b>Quinta do Bomfim is dropped</b> — it's a wine-production visit and you asked
+      for none of those; cutting it is what buys the unhurried cruise and the DOC lunch.</div>
+      <div class="note new"><b>DOC moves from dinner to lunch.</b> Two things fall out of that. It's
+      exactly en route, so the drive south costs nothing extra; and it removes the worry about whether
+      Rui Paula's Folgosa room opens on a Wednesday <i>evening</i> in shoulder season. Lunch service is
+      the reliable one. Still confirm when you book.</div>
+      <div class="note warn"><b>Wet-weather version.</b> Skip the climb, take the Régua → Pinhão railway
+      instead — same view, under a roof — and leave an hour earlier. <b>Galafura is the first thing to cut</b>
+      if you're running late or the valley is in cloud; the viewpoint is worthless in fog.</div>
+      <div class="note warn"><b>Tonight is triple-booked</b> — Bussaco, the Coimbra Airbnb and Vila Julieta
+      are all held for the 7th. This day is written for <b>Bussaco</b>; if you keep Coimbra instead, the
+      drive is the same length, you check in at R. Lourenço de Almeida Azevedo 5 at 18:15, and the evening
+      becomes dinner in the old town plus <b>Coimbra fado at À Capella</b> at 21:30. See the flag at the
+      top of Flags.</div>
+    </div>
+  </details>
+
+  <!-- THU 8 -->
+  <details class="day card">
+    <summary>
+      <div class="chip c-coim"><span class="dw">Thu</span><span class="dn">8</span></div>
+      <div class="dmeta"><h3>A forest at dawn, a library at noon, a monastery at dusk</h3>
+        <div class="where">Buçaco → Coimbra → Batalha · ends in <b>night 5 · Hotel Lis Batalha</b></div></div>
+      <span class="caret">▶</span>
+    </summary>
+    <div class="dbody">
+      <table class="sched">
+        <tr><td class="t">07:45</td><td><b>Walk the Buçaco forest, straight out of the hotel door.</b> Up the Via Sacra to <b>Cruz Alta</b> and back down past the <b>Fonte Fria</b> — about 2h, ~200 m of climb, shaded the whole way. Two hundred and fifty species behind a monastic wall, and at this hour it is entirely yours. <b>This is the walk the itinerary kept losing</b>, and sleeping inside the forest is the only way it ever fitted</td></tr>
+        <tr><td class="t">10:00</td><td>Breakfast; look properly at the staircase azulejos and the Battle of Buçaco panels on the way through</td></tr>
+        <tr><td class="t">11:00</td><td>Check out; drive to <b>Coimbra</b>, ~30 min</td></tr>
+        <tr><td class="t">11:45</td><td><b>University of Coimbra</b> — <b>book the Biblioteca Joanina for ~12:00</b>. It's a timed 20-minute slot and it sells out, so this one goes in the diary before anything else today</td></tr>
+        <tr><td class="t">12:30</td><td>The rest of the ticket — <b>Capela de São Miguel</b>, the Sala dos Capelos, the terrace over the Mondego</td></tr>
+        <tr><td class="t">13:30</td><td>Down through the old town to lunch — <b>Sé Velha</b> and the Arco de Almedina are on the way, and it's downhill all of it</td></tr>
+        <tr><td class="t">15:15</td><td>Drive 20 min south to <b>Conímbriga</b> — the largest excavated Roman town in Portugal, the House of the Fountains mosaics still on the floor they were laid on. Allow an hour. It's directly on the road to Batalha <span style="color:var(--terra)">(this is today's flex — cut it if the morning ran long)</span></td></tr>
+        <tr><td class="t">16:45</td><td>Drive to Batalha, ~45 min</td></tr>
+        <tr><td class="t">17:30</td><td><b>Check in at Hotel Lis Batalha</b>, Largo do Mestre Afonso Domingues — <b>the monastery square itself</b></td></tr>
+        <tr><td class="t">18:30</td><td>The monastery's west front floodlit, from the square. You can see it from the hotel, which is the whole point of sleeping here</td></tr>
+        <tr><td class="t">19:45</td><td>Dinner in Batalha <span style="color:var(--terra)">(ask the hotel to book it — small town, quiet midweek in October)</span></td></tr>
+      </table>
+      <div class="note new"><b>Bussaco puts the forest walk back, and that changes the whole balance of
+      the trip.</b> Nature had quietly shrunk to two Douro mornings. Now you get a proper two-hour walk
+      inside a walled 17th-century forest, at dawn, from your own door — and <b>Mealhada's leitão comes
+      back within reach too</b>, ten minutes away, as last night's dinner.</div>
+      <div class="note warn"><b>The Batalha monastery moves to Friday morning.</b> You can't get there
+      before last admission (~17:30) on a day that starts with a forest walk. That's fine — it opens at
+      09:00 and it's across the square from your room, so Friday simply starts inside it. <b>The trade-off
+      is that Mira de Aire comes out of Friday</b>; you were going to cut it anyway.</div>
+      <div class="note warn"><b>Alternative if you keep the Coimbra Airbnb instead.</b> The day gets
+      easier and smaller: check out by 11:00 (early and firm), university at 09:00 on the first Joanina
+      slot, old town, lunch, Conímbriga at 14:00, Batalha by 16:15 — which puts the <b>monastery back on
+      Thursday at 16:45</b> and leaves Friday with Mira de Aire in it. You lose the forest and Mealhada.</div>
+    </div>
+  </details>
+
+  <!-- FRI 9 -->
+  <details class="day card">
+    <summary>
+      <div class="chip c-lisbon"><span class="dw">Fri</span><span class="dn">9</span></div>
+      <div class="dmeta"><h3>Two monasteries before lunch, the ocean after it, Lisbon by dark</h3>
+        <div class="where">Batalha → Nazaré → Lisbon · ends in <b>night 6 · Lisbon</b></div></div>
+      <span class="caret">▶</span>
+    </summary>
+    <div class="dbody">
+      <table class="sched">
+        <tr><td class="t">08:30</td><td>Breakfast, bags in the car</td></tr>
+        <tr><td class="t">09:00</td><td><b>Mosteiro da Batalha</b>, across the square as it opens. The Founder's Chapel, the Royal Cloister's stone tracery, and the <b>Capelas Imperfeitas</b> — an octagonal mausoleum left open to the sky for five hundred years. You are the first people in it</td></tr>
+        <tr><td class="t">10:30</td><td>Check out — the hotel allows until 12:00, so there's no rush at either end</td></tr>
+        <tr><td class="t">10:50</td><td>Drive to <b>Alcobaça</b>, ~30 min</td></tr>
+        <tr><td class="t">11:20</td><td><b>Mosteiro de Alcobaça</b> — Cistercian, austere, enormous, and the opposite of Batalha in every way, which is exactly why seeing both inside three hours works. <b>The tombs of Pedro and Inês face each other across the transept</b>, so they'd see each other first at the resurrection. She was murdered in Coimbra, which you left yesterday</td></tr>
+        <tr><td class="t">12:45</td><td>Drive to <b>Nazaré</b>, ~20 min</td></tr>
+        <tr><td class="t">13:05</td><td><b>Lunch on the seafront</b> — a working fishing town, and the fish is the reason to be here</td></tr>
+        <tr><td class="t">14:30</td><td><b>Funicular up to Sítio</b>, the clifftop village — Nossa Senhora da Nazaré, the Suberco balcony, the drop straight down to the beach</td></tr>
+        <tr><td class="t">15:15</td><td><b>Praia do Norte and the Forte de São Miguel Arcanjo</b> — the lighthouse with the big-wave museum inside. Early October is the start of the season: no 25-metre day, but the canyon is already working and the swell here is unlike anywhere else in Europe</td></tr>
+        <tr><td class="t">16:45</td><td>Depart for Lisbon, ~1h20 down the A8</td></tr>
+        <tr><td class="t">18:15</td><td><b>Return the rental car at LIS airport</b> — the only car of the trip, and this is where it ends</td></tr>
+        <tr><td class="t">18:50</td><td>Uber to <b>HUL · Chiado</b> (~15 min, €12–15). <b>Self check-in by lockbox</b> — no host to meet, so a slow arrival costs nothing. <b>Have the code saved offline</b></td></tr>
+        <tr><td class="t">20:45</td><td>Dinner in Chiado — Páteo — Bairro do Avillez is a minute from the door <span style="color:var(--terra)">(to book)</span></td></tr>
+      </table>
+      <div class="note new"><b>This used to be the worst day of the trip and now it's one of the best.</b>
+      It was four stops and 2h45 of driving out of Coimbra, on the day you also return the car and let
+      yourself into a strange flat at 19:20. It's now <b>~2h10 across three short hops</b>, two great
+      monasteries before lunch, and <b>two full hours at the coast</b> — the ocean this itinerary
+      otherwise didn't have.</div>
+      <div class="note warn"><b>Confirm the car can be dropped at LIS on a Friday evening</b> — the airport
+      desks mostly run late or 24h, but check yours.</div>
+      <div class="note"><b>What came out.</b> <b>Grutas de Mira de Aire</b> is gone — the Batalha monastery
+      took the morning slot once Bussaco pushed it off Thursday. It was always the most droppable thing on
+      the list. <b>Óbidos</b> is 25 min south of Nazaré on the A8 if you want a golden-hour stop instead,
+      though it also works as an easy day trip out of Lisbon later.</div>
+    </div>
+  </details>
+
+  <!-- SAT 10 -->
+  <details class="day card">
+    <summary>
+      <div class="chip c-lisbon"><span class="dw">Sat</span><span class="dn">10</span></div>
+      <div class="dmeta"><h3>Alfama, the castle and Baixa</h3>
+        <div class="where">Lisbon, on foot · ends in <b>night 7 · Lisbon</b></div></div>
+      <span class="caret">▶</span>
+    </summary>
+    <div class="dbody">
+      <table class="sched">
+        <tr><td class="t">09:30</td><td><b>Feira da Ladra</b>, Campo de Santa Clara — the flea market runs Tuesdays and Saturdays only</td></tr>
+        <tr><td class="t">10:45</td><td>Panteão Nacional, next door — the dome terrace has the best rooftop view in the city</td></tr>
+        <tr><td class="t">11:45</td><td>Miradouro da Senhora do Monte, then down through Graça</td></tr>
+        <tr><td class="t">12:45</td><td>Castelo de São Jorge</td></tr>
+        <tr><td class="t">14:15</td><td>Lunch in Alfama</td></tr>
+        <tr><td class="t">15:45</td><td>Sé Cathedral and Miradouro de Santa Luzia</td></tr>
+        <tr><td class="t">16:45</td><td>Down to Baixa — Rua Augusta Arch and Praça do Comércio</td></tr>
+        <tr><td class="t">17:30</td><td>Carmo Convent and Archaeological Museum</td></tr>
+        <tr><td class="t">18:45</td><td>Santa Justa lift, or the free view from Largo do Carmo behind it</td></tr>
+        <tr><td class="t">20:30</td><td>Dinner · Rocco</td></tr>
+      </table>
+      <div class="note new"><b>A genuinely free Lisbon day</b> — this is what the Nazaré night bought.
+      Nothing here is timed except the Carmo closing hour, so it absorbs any slippage and works as
+      the rain day too. Time Out Market is the flexible fallback for lunch or a snack.</div>
+    </div>
+  </details>
+
+  <!-- SUN 11 -->
+  <details class="day card">
+    <summary>
+      <div class="chip c-lisbon"><span class="dw">Sun</span><span class="dn">11</span></div>
+      <div class="dmeta"><h3>Belém</h3>
+        <div class="where">Lisbon riverside · ends in <b>night 8 · Lisbon</b></div></div>
+      <span class="caret">▶</span>
+    </summary>
+    <div class="dbody">
+      <table class="sched">
+        <tr><td class="t">09:30</td><td>Jerónimos Monastery — timed cloister entry</td></tr>
+        <tr><td class="t">11:00</td><td>National Coach Museum</td></tr>
+        <tr><td class="t">12:15</td><td>Pastéis de Belém — eat them at the counter, warm</td></tr>
+        <tr><td class="t">13:00</td><td>Lunch · O Frade</td></tr>
+        <tr><td class="t">15:00</td><td>Belém Tower — timed entry</td></tr>
+        <tr><td class="t">16:15</td><td>MAAT and the riverfront</td></tr>
+        <tr><td class="t">17:45</td><td>LX Factory</td></tr>
+        <tr><td class="t">20:00</td><td>Dinner and music · Clube de Fado</td></tr>
+      </table>
+      <div class="note"><b>Rainy-day swap:</b> CAM Gulbenkian 10:00 · Estufa Fria 12:00 · Time Out Market 13:30 ·
+      Tile Museum 15:30 <i>only if its renovation closure has ended</i> · Clube de Fado 20:00.
+      CAM is closed Tuesdays, so this substitution only works today.</div>
+    </div>
+  </details>
+
+  <!-- MON 12 -->
+  <details class="day card">
+    <summary>
+      <div class="chip c-lisbon"><span class="dw">Mon</span><span class="dn">12</span></div>
+      <div class="dmeta"><h3>Sintra and the cape, by train</h3>
+        <div class="where">Sintra → Cabo da Roca → Cascais · ends in <b>night 9 · Lisbon</b></div></div>
+      <span class="caret">▶</span>
+    </summary>
+    <div class="dbody">
+      <table class="sched">
+        <tr><td class="t">07:55</td><td>Walk to <b>Rossio station</b> — ~8 min downhill from the flat, through Largo do Carmo and down Calçada do Carmo. <b>No funicular needed</b>, which is the quiet dividend of basing in Chiado</td></tr>
+        <tr><td class="t">08:11</td><td>Train to Sintra, ~40 min. Load a Navegante card at the machine</td></tr>
+        <tr><td class="t">09:00</td><td>Bus <b>434</b> from the station up to the palaces</td></tr>
+        <tr><td class="t">10:00</td><td><b>Pena Palace</b> timed entry — book 10:00, not 09:30, to absorb train and bus slippage</td></tr>
+        <tr><td class="t">12:30</td><td>Lunch · Romaria de Baco, in the town</td></tr>
+        <tr><td class="t">14:00</td><td><b>Quinta da Regaleira</b> — 15 min downhill walk from the centre, or bus 435</td></tr>
+        <tr><td class="t">16:15</td><td>Bus <b>1624</b> toward Cascais</td></tr>
+        <tr><td class="t">17:00</td><td><b>Cabo da Roca</b> — the westernmost point of Europe</td></tr>
+        <tr><td class="t">18:15</td><td>Same bus on to <b>Cascais</b>; walk the seafront, dinner there or back in town</td></tr>
+        <tr><td class="t">19:40</td><td>Train from Cascais to Cais do Sodré, ~40 min along the water</td></tr>
+      </table>
+      <div class="note new"><b>Reworked for no car, and it comes out better.</b> Instead of driving out and
+      doubling back, the day runs one way: rail out to Sintra, bus over the cape, rail home along the
+      coast from Cascais. No parking, no backtracking, and the return leg is a sunset ride by the river.</div>
+      <div class="note warn"><b>Monserrate is cut</b> to make the bus connection — it has scaffolding anyway,
+      so it was the right thing to lose. And <b>bus 1624 is the weak link</b>: Scotturb runs it roughly
+      hourly and thins out in shoulder season. Check the October timetable when you book Pena; if it
+      doesn't work, drop Cabo da Roca and take the train straight back from Sintra.</div>
+      <div class="note">Monday is still the correct Sintra day: Jerónimos, Belém Tower, the Coach Museum,
+      Arte Antiga, the Azulejo Museum and the Panteão all close Mondays, while every Sintra palace stays
+      open — and Monday is Sintra's quietest day.</div>
+    </div>
+  </details>
+
+  <!-- TUE 13 -->
+  <details class="day card">
+    <summary>
+      <div class="chip c-lisbon"><span class="dw">Tue</span><span class="dn">13</span></div>
+      <div class="dmeta"><h3>A last Lisbon day, then home</h3>
+        <div class="where">Estrela and Campo de Ourique · <b>no night</b> · LIS 22:15</div></div>
+      <span class="caret">▶</span>
+    </summary>
+    <div class="dbody">
+      <table class="sched">
+        <tr><td class="t">09:30</td><td>Check out of the flat — lockbox, so no handover to arrange</td></tr>
+        <tr><td class="t">09:50</td><td><b>Drop the bags at a locker near Cais do Sodré</b>, ~10 min downhill and on today's line. <b>Book it in advance</b> — self check-in means there's no host on site to hold them</td></tr>
+        <tr><td class="t">10:15</td><td><b>Museu Nacional de Arte Antiga</b> — the one big museum you haven't seen, and it's closed Mondays so today is its day</td></tr>
+        <tr><td class="t">12:15</td><td>Basílica da Estrela and the Jardim da Estrela</td></tr>
+        <tr><td class="t">13:15</td><td>Lunch · Mercado de Campo de Ourique — smaller and far more local than Time Out</td></tr>
+        <tr><td class="t">15:00</td><td>Tram 28 back east, or walk Príncipe Real for the last of the shopping</td></tr>
+        <tr><td class="t">16:30</td><td>A final miradouro — São Pedro de Alcântara, with a drink</td></tr>
+        <tr><td class="t">18:00</td><td>Collect the bags</td></tr>
+        <tr><td class="t">18:45</td><td>Uber to LIS, ~20 min, ~€15</td></tr>
+        <tr><td class="t">19:15</td><td>Enter the terminal</td></tr>
+        <tr><td class="t">22:15</td><td>Flight departs</td></tr>
+      </table>
+      <div class="note new"><b>Arrábida is gone with the second car.</b> Portinho da Arrábida is genuinely
+      hard to reach without driving — the bus involves a change at Setúbal and leaves you a long way
+      from the shore — so it isn't worth rescuing. This is the replacement, and it's a gentler last day:
+      no drive, no car return, no watching the clock.</div>
+      <div class="note"><b>If you want sea air instead</b>, Cascais is 40 minutes from Cais do Sodré and
+      needs no car at all. Only if you skipped it on Monday, though — otherwise you'd be going twice.
+      <b>Note CAM Gulbenkian and MAAT are both closed Tuesdays</b>, so don't plan around either.</div>
+    </div>
+  </details>
+</div></section>
+
+<!-- ============ STAYS ============ -->
+<section id="stay"><div class="wrap">
+  <div class="shead"><span class="n">03</span><h2>Where to stay</h2></div>
+  <p class="lede">Mid-range boutique hotels or Airbnbs throughout, with <b>one splurge</b>. Four bases, and
+  only one of them a single night — much less packing and unpacking than the earlier versions.
+  <b>All nine nights are now booked.</b> Five bases: Porto, Pinhão, Coimbra, Batalha, Lisbon.
+  The only thing left to do here is <b>cancel two of the three bookings held for the night of the 7th</b>
+  — see the flag at the top of Flags. <b>The itinerary is currently written for Bussaco.</b></p>
+
+  <table class="grid">
+    <tr><th>Stop</th><th>Nights</th><th>Brief</th><th>Candidates</th></tr>
+    <tr><td><b>Porto</b></td><td>1–2 · 4, 5 Oct</td>
+      <td><span class="bk">Booked</span><b>NOLIA Boutique Hotel</b> — in Sun 4 Oct, out Tue 6 Oct</td>
+      <td>Two loose ends: <b>email them about early check-in</b> for the 09:00 landing, and pick a car
+      rental desk near the hotel for Tuesday morning</td></tr>
+    <tr><td><b>Douro</b></td><td>3 · 6 Oct</td>
+      <td><span class="bk">Booked</span><b>The Vintage House</b>, Pinhão — riverside, pool, the Rabelo
+      restaurant. <b>Ask for a refurbished, river-facing room</b>: the property was refurbished unevenly and
+      reviews split along that line</td>
+      <td>Settles the Pinhão-vs-Régua question in Pinhão's favour, and it earns it — the cruise quay,
+      the station azulejos and the Casal de Loivos trailhead are all walkable, so the car stays parked
+      until you leave. <b>Dinner at the Rabelo, Tue 6 at 20:00, is booked.</b></td></tr>
+    <tr><td><b>Buçaco</b><br><span style="font-size:11px;color:#2e6b4f">recommended</span></td><td>4 · 7 Oct</td>
+      <td><span class="bk">Booked</span><b>Palace Hotel do Bussaco</b>, Luso — 7–8 Oct. Neo-Manueline
+      royal hunting palace, 1888–1907, <b>inside the walled Mata Nacional do Buçaco</b>.
+      <b>Ask for a renovated room</b> — the fabric is uneven and reviews split on it, exactly like the
+      Vintage House</td>
+      <td><b>Keep this one.</b> It gives back the two things the Batalha booking cost you: the
+      <b>Buçaco forest walk</b>, now a dawn walk from your own door rather than an hour of backtracking,
+      and <b>leitão at Mealhada</b>, ten minutes away. It is also the only place the unspent splurge can
+      still land. Against it: Coimbra becomes a 30-min drive instead of a walk, so you lose the Coimbra
+      evening and the fado at À Capella, and Thursday gets full. <b>Don't book anything in the wine
+      cellar</b> — it's the hotel's calling card and it isn't what you're here for</td></tr>
+    <tr><td><b>Coimbra</b><br><span style="font-size:11px;color:#b4553a">duplicate</span></td><td>4 · 7 Oct</td>
+      <td><span class="bk" style="background:#f6e7d8;color:#8a5a2b;border-color:#e2c9ac">Cancel</span><b>Studio King Deluxe</b> — Airbnb, entire apartment, hosted by
+      Nuno Miguel. <b>R. Lourenço de Almeida Azevedo 5</b>, 3000-250. In Wed 7 <b>after 15:00</b>,
+      out Thu 8 <b>by 11:00</b> — that checkout is early and firm, so clear the flat before you go up
+      to the university</td>
+      <td>Genuinely well placed — <b>upper town near Praça da República and the Jardim da Sereia</b>, about
+      ten minutes below the university gate, and a whole apartment. <b>The runner-up, and the one to keep
+      if you'd rather have a Coimbra evening</b> — dinner in the old town and fado at À Capella — than a
+      forest morning. Free cancellation is usually generous on Airbnb, so cancel this one <i>second</i>.
+      <span style="color:var(--terra)">Check the pin yourself; I'm reading the street name, not a map.</span></td></tr>
+    <tr><td><b>Coimbra</b><br><span style="font-size:11px;color:#b4553a">duplicate</span></td><td>4 · 7 Oct</td>
+      <td><span class="bk" style="background:#f6e7d8;color:#8a5a2b;border-color:#e2c9ac">Cancel</span>
+      <b>Vila Julieta Guesthouse</b> — Booking.com, Queen Room with Garden View, 20 Alameda Conchada,
+      3000-117. In Wed 7, out Thu 8. <b>One of three held for the same night.</b> Booked deliberately as a hedge —
+      <b>Booking.com will auto-charge the card</b></td>
+      <td><b>Cancel this one first, whatever else you decide.</b> It loses to both of the others:
+      Alameda Conchada runs north towards the Conchada cemetery, further out and uphill from the centre,
+      and it's a guesthouse room rather than an apartment or a palace. <b>Booking.com auto-charges, so this
+      is the one with a clock on it</b> — check the free-cancellation deadline today</td></tr>
+    <tr><td><b>Batalha</b></td><td>5 · 8 Oct</td>
+      <td><span class="bk">Booked</span><b>Hotel Lis Batalha</b> — Double Room Mansarda,
+      Largo do Mestre Afonso Domingues. In Thu 8 from 15:00, out Fri 9 by 12:00.
+      <b>+351 244 765 260</b></td>
+      <td>The address is <b>the monastery square</b>, which is the whole argument for it. It moves Batalha
+      to Thursday evening, gives you the floodlit west front from the doorstep, and turns Friday from
+      2h45 of driving across four stops into two short hops with a real afternoon at Nazaré.
+      <b>Ask them to book dinner</b> — the town is small and quiet midweek in October</td></tr>
+    <tr><td><b>Lisbon</b></td><td>6–9 · 9, 10, 11, 12 Oct</td>
+      <td><span class="bk">Booked</span><b>HUL · Chiado</b> — Airbnb, in Fri 9 Oct, out Tue 13 Oct.
+      <b>₪2,080 for the four nights</b> (~€520, ~€130/night), free cancellation until 4 Oct.
+      ★4.76 over 490 reviews, Guest Favourite, Superhost. <b>Self check-in by lockbox</b></td>
+      <td>On the <b>Rua Nova da Trindade block</b>, behind Cervejaria Trindade and a corner from Largo do
+      Carmo — east of Rua da Misericórdia, so clear of the Bairro Alto grid. Two things still to confirm:
+      <b>the floor and whether there's a lift</b>, and the <b>lockbox code and exact door</b></td></tr>
+  </table>
+
+  <div class="note new" style="margin-top:16px"><b>Chiado, not Príncipe Real — and the car is why.</b>
+  With one rental only, dropped at LIS on the way in, the whole Lisbon week runs on trains, trams and feet.
+  That makes transit position worth more than neighbourhood character, and Chiado wins it outright:
+  <b>~8 min downhill to Rossio</b> for Monday's Sintra train, <b>3 min to Baixa-Chiado</b> metro,
+  <b>~10 min to Cais do Sodré</b> for Belém and Tuesday's lockers, <b>2 min to the Carmo Convent</b> —
+  which is already on Saturday's walk — and 4 min to tram 28 at Praça Luís de Camões. You gave up the
+  quiet plateau and got back roughly ten minutes on every leg of the week.</div>
+
+  <div class="note" style="margin-top:12px"><b>The food argument survives the move.</b> What nearly kept
+  you in Príncipe Real was eating, and Chiado holds its own: Páteo — Bairro do Avillez is a minute away,
+  Belcanto four, BOA-BAO three, Taberna da Rua das Flores and Manteigaria about five.</div>
+
+  <div class="note warn" style="margin-top:12px"><b>Confirm the floor before 4 October.</b> The one filter
+  never verified is the <b>lift</b> — you arrive at 19:20 on Friday with all your luggage, and Lisbon's
+  classic trap is a beautiful fourth-floor walk-up. Cancellation is free until the 4th, so message the host
+  now and ask the floor, the lift, and whether the bedroom faces the street or a rear courtyard.
+  Rua da Misericórdia is 150 m west and carries the Bairro Alto crowd home; a rear-facing bedroom makes
+  that a non-question.</div>
+</div></section>
+
+<!-- ============ FOOD ============ -->
+<section id="eat"><div class="wrap">
+  <div class="shead"><span class="n">04</span><h2>Food</h2></div>
+  <p class="lede">Carried over from the researched draft, with the new stops flagged as still needing work.
+  Note the standing request: <b>non-alcoholic pairings, no tasting-room visits.</b></p>
+
+  <table class="grid">
+    <tr><th>When</th><th>Where</th><th>Note</th></tr>
+    <tr><td>Sun 4, 12:30</td><td>Brasão Aliados</td><td>Lunch</td></tr>
+    <tr><td>Sun 4, 20:30</td><td><b>Gruta</b></td><td>Book</td></tr>
+    <tr><td>Mon 5, 12:30</td><td><b>Meia-Nau</b>, Matosinhos</td><td>Book</td></tr>
+    <tr><td>Mon 5, 20:00</td><td><b>Cozinha das Flores</b></td><td>Book · confirm holiday opening</td></tr>
+    <tr><td>Tue 6, 20:00</td><td><b>Rabelo</b>, The Vintage House</td><td><b>✓ Booked</b> · ask for the non-alcoholic pairing on the night</td></tr>
+    <tr><td>Wed 7, 13:15</td><td><b>DOC</b>, Folgosa</td><td>Book · <b>lunch, not dinner</b> · non-alcoholic pairing · ask for the terrace · exactly en route south</td></tr>
+    <tr><td>Wed 7, 20:00</td><td><b>Palace Hotel do Bussaco</b>, dining room</td><td>Reserve with the room · the room <i>is</i> the reason · <span style="color:var(--terra)">alt: <b>Rei dos Leitões</b>, Mealhada, 10 min — leitão à Bairrada, only if the DOC lunch was light</span></td></tr>
+    <tr><td>Thu 8, 13:45</td><td>Coimbra, lower town</td><td>Walk-in · after the Joanina, on the way downhill</td></tr>
+    <tr><td>Thu 8, 19:45</td><td><b>Batalha</b>, on the square</td><td><b>Ask Hotel Lis to book it</b> · small town, quiet midweek in October · Leiria is 15 min north if it looks thin</td></tr>
+    <tr><td>Fri 9, 13:20</td><td><b>Nazaré</b>, the seafront</td><td>Walk-in · working fishing town, the fish is the point</td></tr>
+    <tr><td>Fri 9, 20:45</td><td><b>Chiado</b>, by the flat</td><td><span style="color:var(--terra)">To book · late, keep it easy.</span> Páteo — Bairro do Avillez (1 min) · BOA-BAO (3 min) · Taberna da Rua das Flores (5 min, no reservations)</td></tr>
+    <tr><td>Sat 10, 14:15</td><td>Alfama</td><td>Walk-in</td></tr>
+    <tr><td>Sat 10, 20:30</td><td><b>Rocco</b></td><td>Book</td></tr>
+    <tr><td>Sun 11, 13:00</td><td><b>O Frade</b></td><td>Book</td></tr>
+    <tr><td>Sun 11, 20:00</td><td><b>Clube de Fado</b></td><td>Book</td></tr>
+    <tr><td>Mon 12, 12:30</td><td><b>Romaria de Baco</b>, Sintra</td><td>Book</td></tr>
+    <tr><td>Mon 12, 19:00</td><td>Cascais seafront</td><td><span style="color:var(--terra)">Only if bus 1624 works — otherwise back in Lisbon</span></td></tr>
+    <tr><td>Tue 13, 13:15</td><td>Mercado de Campo de Ourique</td><td>Walk-in · the local Time Out</td></tr>
+  </table>
+</div></section>
+
+<!-- ============ FLAGS ============ -->
+<section id="flags"><div class="wrap">
+  <div class="shead"><span class="n">05</span><h2>Flags and recommendations</h2></div>
+  <p class="lede">What's settled, what changed against the researched draft, and what's still open.</p>
+
+  <div class="flag warn">
+    <h4><span class="pill">Do now</span> The night of the 7th is booked three times — cancel two</h4>
+    <p><b>Palace Hotel do Bussaco</b> (Luso) · <b>Studio King Deluxe</b> (Airbnb, R. Lourenço de Almeida
+    Azevedo 5, Coimbra) · <b>Vila Julieta Guesthouse</b> (Booking.com, 20 Alameda Conchada, Coimbra).
+    All three are in on Wed 7 and out on Thu 8. You held them deliberately, so this is a reminder rather
+    than a warning — but <b>Booking.com auto-charges</b>, so one of the three has a clock on it.</p>
+    <p><b>Cancel Vila Julieta first.</b> It loses to both of the others on every axis and it's the one
+    that will bill you.</p>
+    <p><b>Then keep Bussaco and cancel the Airbnb.</b> Bussaco gives back the two things the Batalha
+    booking cost you — <b>the Buçaco forest walk</b>, now a dawn walk straight out of the door instead of
+    an hour of backtracking, and <b>leitão at Mealhada</b>, ten minutes away. It's also a neo-Manueline
+    royal hunting palace inside a walled 17th-century forest, and the only place left for the splurge
+    that never happened. <b>Ask for a renovated room</b>; the fabric is uneven, same caveat as the
+    Vintage House.</p>
+    <p><b>The honest case for keeping Coimbra instead:</b> Bussaco costs you the Coimbra evening — dinner
+    in the old town and <b>fado at À Capella</b>, which is a different tradition from Lisbon's and you
+    won't get another shot at it. It also makes Thursday full enough that the Batalha monastery slides to
+    Friday morning. If an evening in a university town appeals more than a morning in a forest, keep the
+    Airbnb; <b>the alternative timings are written into Thursday's card</b> and I can flip the site back
+    in five minutes.</p>
+    <p style="color:#b4553a"><b>Everything in the itinerary below is currently written for Bussaco.</b></p>
+  </div>
+
+  <div class="flag done">
+    <h4><span class="pill">Settled</span> Nine nights over five bases</h4>
+    <p><b>Porto 2 · Pinhão 1 · Buçaco 1 · Batalha 1 · Lisbon 4.</b> The Douro settled at a single night,
+    and the freed night went <i>forward</i> — first to Coimbra, then split again when Batalha was booked for
+    the 8th. That's three single nights in a row through the middle, which is more moving than the earlier
+    versions. <b>It buys the coast.</b> Nazaré stops being a rushed hour wedged into a transfer day and
+    becomes a proper afternoon, and the two great monasteries get an evening and a morning instead of a
+    shared lunch hour.</p>
+  </div>
+
+  <div class="flag rec">
+    <h4><span class="pill">Settled</span> The middle of the trip, in the end</h4>
+    <p>Two nights between the Douro and Lisbon, and they went to <b>Coimbra then Batalha</b> rather than
+    two nights in either. That's the version that gets the university <i>and</i> the coast: Coimbra is
+    2h10 from the Douro and puts you under the library gate for a 09:00 slot, and Batalha then drops you
+    within half an hour of Nazaré for Friday.</p>
+    <p>The cost is real — <b>three single nights in a row</b>, so you pack every morning from Tuesday to
+    Friday. Against that, no leg is over 2h10 and every stop is worth the stop. <b>Nazaré finally gets
+    a real afternoon</b> rather than the 15:15–17:30 slot it had when it was wedged into a transfer day.</p>
+  </div>
+
+  <div class="flag info">
+    <h4><span class="pill">Gained</span> Saturday the 10th is now a free Lisbon day</h4>
+    <p>Previously it was a Nazaré→Óbidos→Lisbon transfer with a squeezed evening. Now it's a full unhurried
+    day: Feira da Ladra (Saturdays only), the Panteão dome, the castle, Alfama and Baixa. Nothing on it is
+    timed, so it doubles as the buffer and the rain day.</p>
+  </div>
+
+  <div class="flag">
+    <h4><span class="pill">Cost</span> Friday the 9th is the price of all this</h4>
+    <p>Four stops and 2h45 of driving: Coimbra out at 09:00, caves, Batalha, Nazaré, then Lisbon by 19:20
+    with a car drop on the way. Every individual leg is short and nothing is timed, so it should hold —
+    but it's the one day with no slack. <b>Cut Batalha if you want breathing room.</b>
+    Óbidos no longer fits and is better as a Lisbon day trip.</p>
+  </div>
+
+  <div class="flag">
+    <h4><span class="pill">Lost</span> Peneda-Gerês and the Sistelo hike are gone</h4>
+    <p>The researched draft had a night at Arcos de Valdevez and the PR24 Socalcos de Sistelo trail —
+    both listed under partner feedback as included. The night structure has no room for them; the
+    detour is 2h45 north of the Porto→Douro line. <b>Paiva on the 6th is the substitute</b>, and I think
+    it's a fair one, but it is a substitution and not a reshuffle.</p>
+  </div>
+
+  <div class="flag done">
+    <h4><span class="pill">Booked</span> Pinhão — The Vintage House, night 3</h4>
+    <p>This settles the Pinhão-versus-Régua question in Pinhão's favour, and Wednesday is the proof:
+    <b>The cruise quay, the station panels and the Casal de Loivos trailhead
+    are all on foot from the door</b>, so the car doesn't move at all between arriving Tuesday evening
+    and leaving for Folgosa at 12:45 on Wednesday. It also
+    guarantees the thing that kept eliminating the small quintas — <b>a kitchen that serves dinner every
+    night in October</b> — which matters on Tuesday, when you arrive off Paiva wanting to eat where you
+    sleep. And it hands back the moderate hike lost with Sistelo: the climb to Casal de Loivos.</p>
+    <p>What you give up is seclusion. Pinhão is the valley's tourist hub — boats, coaches, the station —
+    so you wake in a village rather than on a terraced hillside. <b>Ask explicitly for a refurbished,
+    river-facing room</b>; the refurbishment reached the property unevenly and the reviews split on exactly
+    that line.</p>
+  </div>
+
+  <div class="flag done">
+    <h4><span class="pill">Settled</span> Batalha on the 8th is the best structural decision of the trip</h4>
+    <p>It doesn't look like much — a one-night stop in a town of six thousand people — but it fixes the
+    two things that were still wrong with the plan.</p>
+    <p><b>It fixes Friday.</b> The old Friday ran Coimbra → Mira de Aire → Batalha → Nazaré → Lisbon:
+    four stops, 2h45 of driving, on the same day you return the car and let yourself into a strange
+    flat at 19:20. It's now <b>three short hops and about 2h10</b>, with the monastery already behind you.</p>
+    <p><b>It gets you the ocean.</b> That was the one thing the itinerary had none of. Nazaré goes from a
+    squeezed hour to <b>two full hours</b> — lunch on the seafront, the funicular up to Sítio, and Praia
+    do Norte with the season just starting.</p>
+    <p><b>And it pairs the monasteries properly.</b> Batalha floodlit on Thursday evening from your own
+    doorstep, Alcobaça on Friday morning — Gothic exuberance against Cistercian austerity, eighteen hours
+    apart. Alcobaça also closes a loop: the tombs of Pedro and Inês face each other across the transept,
+    and Inês was murdered in Coimbra, which you'll have left the day before.</p>
+    <p><b>What it costs.</b> A third consecutive single night, and with it the <b>Buçaco forest walk</b>
+    and <b>leitão at Mealhada</b> — both of which needed two nights in Coimbra. Buçaco is 30 min north,
+    so with Batalha to the south it would have meant an hour of backtracking. <b>Conímbriga takes its
+    place</b> and is directly on the road, which is a fair trade.</p>
+  </div>
+
+  <div class="flag info">
+    <h4><span class="pill">Budget</span> The splurge has one last chance, and it's Bussaco</h4>
+    <p>The working split was <b>Douro €400–550 × 2</b> · <b>Lisbon €180–240 × 4</b> ·
+    <b>Coimbra €110–160 × 1</b>. What actually got booked: <b>Lisbon at ~€130 a night</b> (₪2,080 for four,
+    against a €720–960 budget), <b>one mid-priced Douro night instead of two splurge nights</b>, and the
+    middle two nights in a Coimbra studio and a small Batalha hotel rather than a country estate.</p>
+    <p><b>Every stop came in under</b> — call it <b>€700–1,000 of accommodation budget unspent</b>. The
+    splurge got designed out of the trip one sensible decision at a time, and until the 7th was
+    triple-booked there was nowhere left to put it.</p>
+    <p><b>Bussaco is that place.</b> It's the one property on this itinerary that is itself a reason to
+    have gone — and choosing it over a Coimbra studio spends a few hundred euros of money you've already
+    saved, on the only night left that could take it. If you'd rather bank it, keep the Airbnb and put
+    the surplus into meals instead; that's a perfectly good answer. It should just be a choice.</p>
+  </div>
+
+  <div class="flag">
+    <h4><span class="pill">Do now</span> Email NOLIA about the 09:00 landing</h4>
+    <p>You're booked from the 4th, but Portuguese check-in is 15:00 and the day is scheduled from 11:45 —
+    so the room has to be ready at 10:30 or the morning falls apart. Three ways out, cheapest first:
+    <b>ask for a free early check-in</b> (small boutique hotels often say yes if you tell them the flight
+    number weeks ahead); <b>pay a half-day early-arrival fee</b>; or <b>add the night of the 3rd</b>,
+    which guarantees it. Whichever you pick, get it in writing. Worst case, agree bag drop plus access
+    to a bathroom and shift the shower to the 17:30 gap.</p>
+  </div>
+
+  <div class="flag done">
+    <h4><span class="pill">Settled</span> Lisbon is car-free</h4>
+    <p>One rental for the whole trip, dropped at LIS on the way in from Nazaré on the 9th. Two consequences,
+    both fine: <b>Sintra becomes a rail-and-bus day</b> — and a better one, since it now runs one way out
+    to the cape and home along the coast from Cascais instead of doubling back — and <b>Arrábida is gone</b>,
+    because Portinho is genuinely hard to reach without driving. The 13th is a Lisbon day instead.
+    Net saving of roughly €100 after train and bus fares, and no parking to arrange.</p>
+  </div>
+
+  <div class="flag done">
+    <h4><span class="pill">Booked</span> Chiado, in an apartment — HUL</h4>
+    <p>The plan was Príncipe Real; the flat that came up was Chiado, and once the car was gone that's the
+    better half of the trade. Príncipe Real bought a quiet plateau at the cost of about five extra minutes
+    to every station. Chiado gives those minutes back on all four days — and the food, which was the whole
+    reason for Príncipe Real, is just as good a minute from the door.</p>
+    <p><b>Why this listing over the other two:</b> ★4.76 across <b>490 reviews</b> with a Guest Favourite
+    badge — by far the most trustworthy number of the three, and the highest. Superhost of twelve years.
+    <b>Self check-in by lockbox</b>, which matters more than it sounds for a 19:20 Friday arrival after a
+    Nazaré drive and an airport car drop. The rejected pair: the Glória flat sat on the funicular calçada
+    at 4.58 over 33 reviews and cost more, and the Bairro Alto flat was cheaper but put a 3am street
+    against an 07:55 Monday start.</p>
+  </div>
+
+  <div class="flag">
+    <h4><span class="pill">Do now</span> Nobody holds your bags on the 13th</h4>
+    <p>You check out around 09:30 and fly at 22:15 — nine hours with luggage. Self check-in by lockbox is
+    the right call for Friday night, but it cuts the other way on Tuesday: <b>there is no host on site to
+    leave bags with</b>, so this one has no fallback and has to be booked. A <b>storage locker near
+    Cais do Sodré</b> (Bounce, Radical Storage and Nannybag all operate there, ~€6 per bag per day) sits
+    ~10 min downhill from the flat and on the line between Tuesday's museum and the airport Uber.
+    Worth asking the host anyway in case the building has a luggage room — but book the locker regardless.</p>
+  </div>
+
+  <div class="flag info">
+    <h4><span class="pill">Watch</span> Nazaré is now weather-dependent in a way it wasn't</h4>
+    <p>The big-wave season at Praia do Norte starts around now, and you have one two-hour window on Friday
+    afternoon instead of an evening plus a morning. If a big swell is forecast for the 9th it's worth
+    stretching the stop; if it's flat, leave early and get to Lisbon in daylight.</p>
+  </div>
+
+  <div class="flag info">
+    <h4><span class="pill">Watch</span> Three live closure risks</h4>
+    <p><b>Monserrate</b> has refurbishment works and scaffolding — consider dropping it for the Moorish Castle
+    or Sintra National Palace. <b>The Tile Museum</b> reports a renovation closure, which puts a hole in the
+    rainy-day plan. <b>Mira de Aire</b> is now out of the plan entirely — the Batalha monastery
+    took Friday morning once Bussaco pushed it off Thursday. It only comes back if you keep the Coimbra
+    Airbnb, and even then it's the first thing to cut.</p>
+  </div>
+
+  <div class="flag info">
+    <h4><span class="pill">Budget</span> Roughly where this lands</h4>
+    <p>Mid-range with one splurge, two people, nine nights: <b>€3,700 – 5,300</b> all in — accommodation
+    €1,600–2,400, the single car with fuel and tolls ~€400, Lisbon trains, buses and Ubers ~€90,
+    food ~€1,300–1,800, tickets and entries ~€380. The band came down because <b>Lisbon booked at ~€520
+    for four nights</b> rather than the €720–960 penciled in. Dropping the second car saves about €100
+    net on top. <b>All nine nights are now booked</b>, so accommodation is fixed and the total should land
+    near the <b>bottom</b> of that band — call it <b>€3,700–4,300</b> unless you deliberately spend the
+    surplus on food. The one live cost left is the duplicate Coimbra night, which is why it's flagged
+    at the top.</p>
+  </div>
+</div></section>
+
+<!-- ============ TODO ============ -->
+<section id="todo"><div class="wrap">
+  <div class="shead"><span class="n">06</span><h2>To book</h2></div>
+  <p class="lede">In order. Ticks are saved in this browser.</p>
+
+  <div class="cols">
+    <div>
+      <div class="todo">
+        <h4>1 · Still to decide</h4>
+        <label><input type="checkbox" data-k="d9"><span><b>Bussaco or the Coimbra Airbnb for the 7th</b> — forest morning vs Coimbra evening<span class="when">the last real decision · it sets Thursday and moves Batalha monastery between Thu and Fri</span></span></label>
+        <label><input type="checkbox" data-k="d4"><span>Early check-in at NOLIA, or add the night of the 3rd<span class="when">email them · blocks the whole first morning</span></span></label>
+        <label><input type="checkbox" data-k="d7"><span>Fri 9: keep Batalha, swap for Alcobaça, or cut it</span></label>
+        <label><input type="checkbox" data-k="d5"><span>Confirm whether the 22:15 flight is Schengen or long-haul</span></label>
+      </div>
+
+      <div class="todo" style="margin-top:14px">
+        <h4>2 · Lodging and cars</h4>
+        <label><input type="checkbox" data-k="l1"><span><b>NOLIA Boutique Hotel</b>, Porto · nights 1–2, 4–6 Oct<span class="when">✓ booked</span></span></label>
+        <label><input type="checkbox" data-k="l2"><span><b>The Vintage House</b>, Pinhão · night 3, 6–7 Oct<span class="when">✓ booked · ask for a refurbished river-facing room</span></span></label>
+        <label><input type="checkbox" data-k="l12"><span><b>Palace Hotel do Bussaco</b> · night 4, 7 Oct<span class="when">✓ booked · recommended keeper · <b>ask for a renovated room</b></span></span></label>
+        <label><input type="checkbox" data-k="l9"><span style="color:#b4553a"><b>CANCEL Studio King Deluxe</b> (Airbnb, Coimbra) — if you keep Bussaco<span class="when">the runner-up · decide this second</span></span></label>
+        <label><input type="checkbox" data-k="l10"><span><b>Rabelo</b>, The Vintage House · Tue 6, 20:00<span class="when">✓ booked — arrival-night dinner is settled</span></span></label>
+        <label><input type="checkbox" data-k="l3"><span><b>Hotel Lis Batalha</b> · night 5, 8 Oct<span class="when">✓ booked · on the monastery square · ask them to book dinner</span></span></label>
+        <label><input type="checkbox" data-k="l11"><span style="color:#b4553a"><b>CANCEL Vila Julieta Guesthouse</b> — cancel this one first<span class="when">Booking.com auto-charges · check the free-cancellation deadline today</span></span></label>
+        <label><input type="checkbox" data-k="l5"><span><b>HUL · Chiado</b>, Lisbon · nights 6–9, 9–13 Oct<span class="when">✓ booked · ₪2,080 · free cancellation to 4 Oct</span></span></label>
+        <label><input type="checkbox" data-k="l7"><span>Message the HUL host: <b>floor, lift, street or courtyard bedroom</b><span class="when">before 4 Oct, while cancellation is still free</span></span></label>
+        <label><input type="checkbox" data-k="l8"><span>Save the <b>lockbox code and exact door</b> offline<span class="when">you arrive 19:20 Fri with no host to meet</span></span></label>
+        <label><input type="checkbox" data-k="l6"><span>Bag locker near Cais do Sodré for Tue 13<span class="when">no host on site — this one has no fallback</span></span></label>
+        <label><input type="checkbox" data-k="c1"><span>The car: Porto 6 Oct → LIS airport 9 Oct<span class="when">the only rental · Via Verde · confirm Fri evening drop hours</span></span></label>
+      </div>
+    </div>
+
+    <div>
+      <div class="todo">
+        <h4>3 · Timed tickets — these sell out</h4>
+        <label><input type="checkbox" data-k="t1"><span>Passadiços do Paiva + Ponte 516<span class="when">6 Oct · book early</span></span></label>
+        <label><input type="checkbox" data-k="t2"><span>Pena Palace + internal transfer<span class="when">12 Oct · no late tolerance</span></span></label>
+        <label><input type="checkbox" data-k="t3"><span>Quinta da Regaleira<span class="when">12 Oct</span></span></label>
+        <label><input type="checkbox" data-k="t4"><span>Jerónimos Monastery<span class="when">11 Oct</span></span></label>
+        <label><input type="checkbox" data-k="t5"><span>Belém Tower<span class="when">11 Oct · reopened May 2026</span></span></label>
+        <label><input type="checkbox" data-k="t6"><span>Biblioteca Joanina<span class="when">8 Oct ~12:00 · timed 20 min, sells out — book before anything else that day</span></span></label>
+        <label><input type="checkbox" data-k="t13"><span>Mosteiro da Batalha<span class="when">9 Oct at 09:00 opening (Bussaco version) · 8 Oct 16:45 if you keep Coimbra</span></span></label>
+        <label><input type="checkbox" data-k="t14"><span>Conímbriga + Mosteiro de Alcobaça<span class="when">8 Oct 14:00 and 9 Oct 11:45 · walk-up is fine for both</span></span></label>
+        <label><input type="checkbox" data-k="t7"><span>Livraria Lello<span class="when">5 Oct, at opening</span></span></label>
+        <label><input type="checkbox" data-k="t8"><span>Palácio da Bolsa<span class="when">4 Oct</span></span></label>
+        <label><input type="checkbox" data-k="t9"><span><b>Pinhão rabelo cruise</b>, one hour<span class="when">7 Oct 11:00 · Bomfim dropped — no wine visits</span></span></label>
+        <label><input type="checkbox" data-k="t11"><span>Castelo de São Jorge + Panteão Nacional<span class="when">10 Oct · online skips the queue</span></span></label>
+        <label><input type="checkbox" data-k="t12"><span>Museu Nacional de Arte Antiga<span class="when">13 Oct · walk-up is fine</span></span></label>
+      </div>
+
+      <div class="todo" style="margin-top:14px">
+        <h4>4 · Verify before you rely on it</h4>
+        <label><input type="checkbox" data-k="v1"><span>Every 5 October holiday opening</span></label>
+        <label><input type="checkbox" data-k="v2"><span>Tile Museum — has the renovation ended?</span></label>
+        <label><input type="checkbox" data-k="v3"><span>Monserrate — scaffolding extent, still worth it?</span></label>
+        <label><input type="checkbox" data-k="v4"><span>Sintra access notices, closer to the date</span></label>
+        <label><input type="checkbox" data-k="v5"><span>Nazaré swell forecast for Fri 9, a few days out</span></label>
+        <label><input type="checkbox" data-k="v6"><span>Research the Friday-night Lisbon dinner</span></label>
+        <label><input type="checkbox" data-k="v7"><span><b>Mosteiro da Batalha</b> October opening hours<span class="when">you're there at 09:00 Fri — confirm it opens then</span></span></label>
+        <label><input type="checkbox" data-k="v8"><span>Scotturb <b>1624</b> October timetable, Sintra → Cabo da Roca → Cascais<span class="when">decides Monday afternoon</span></span></label>
+        <label><input type="checkbox" data-k="v9"><span>Rossio → Sintra first trains, and buy Navegante cards on day one</span></label>
+      </div>
+    </div>
+  </div>
+
+  <div class="todo" style="margin-top:14px">
+    <h4>5 · Restaurants — book in this order</h4>
+    <label><input type="checkbox" data-k="r1"><span>Cozinha das Flores · 5 Oct 20:00 — confirm holiday opening first</span></label>
+    <label><input type="checkbox" data-k="r2"><span><b>DOC</b>, Folgosa · 7 Oct 13:15 — <b>lunch</b>, terrace, non-alcoholic pairing</span></label>
+    <label><input type="checkbox" data-k="r3"><span>Clube de Fado · 11 Oct 20:00</span></label>
+    <label><input type="checkbox" data-k="r4"><span>Gruta · 4 Oct 20:30</span></label>
+    <label><input type="checkbox" data-k="r5"><span>Rocco · 10 Oct 20:30</span></label>
+    <label><input type="checkbox" data-k="r6"><span>Batalha dinner · 8 Oct 19:45 — <b>ask Hotel Lis to book it</b></span></label>
+    <label><input type="checkbox" data-k="r7"><span>Meia-Nau · 5 Oct 12:30</span></label>
+    <label><input type="checkbox" data-k="r8"><span>O Frade · 11 Oct 13:00</span></label>
+    <label><input type="checkbox" data-k="r9"><span>Bussaco dining room · 7 Oct 20:00 — reserve with the room</span></label>
+    <label><input type="checkbox" data-k="r10"><span>Romaria de Baco · 12 Oct 12:30</span></label>
+    <label><input type="checkbox" data-k="r11"><span>Cascais dinner · 12 Oct, if the 1624 bus works out</span></label>
+    <label><input type="checkbox" data-k="r12"><span>Lisbon, Fri 9 late · 20:45 — once chosen</span></label>
+    <label><input type="checkbox" data-k="r13"><span>À Capella fado, Coimbra · 7 Oct 21:30 — <span style="color:var(--terra)">only if you keep the Coimbra Airbnb</span></span></label>
+    <div class="prog"><span id="progtext">0 of 0 done</span><button id="reset">Reset all</button></div>
+  </div>
+</div></section>
+
+<!-- ============ REFS ============ -->
+<section id="refs"><div class="wrap">
+  <div class="shead"><span class="n">07</span><h2>Official sources</h2></div>
+  <p class="lede">Check these rather than trusting anything above.</p>
+  <table class="grid">
+    <tr><td><a href="https://www.parquesdesintra.pt/en/plan-your-visit/tickets-palace-of-pena" target="_blank" rel="noopener">Pena Palace — access and tickets</a></td></tr>
+    <tr><td><a href="https://www.regaleira.pt/en/destaques/e-tickets/" target="_blank" rel="noopener">Quinta da Regaleira — e-tickets</a></td></tr>
+    <tr><td><a href="https://www.parquesdesintra.pt/en/notices/refurbishment-works-at-the-palace-of-monserrate/" target="_blank" rel="noopener">Monserrate — refurbishment notice</a></td></tr>
+    <tr><td><a href="https://www.museusemonumentos.pt/en/museus-e-monumentos/jeronimos-monastery" target="_blank" rel="noopener">Jerónimos Monastery — hours</a></td></tr>
+    <tr><td><a href="https://www.museusemonumentos.pt/en/noticia-com/torre-de-belem-reabre-ao-publico" target="_blank" rel="noopener">Belém Tower — reopening and timed entry</a></td></tr>
+    <tr><td><a href="https://www.museusemonumentos.pt/en/museus-e-monumentos/museu-nacional-do-azulejo" target="_blank" rel="noopener">National Tile Museum — status</a></td></tr>
+    <tr><td><a href="https://www.museuarqueologicodocarmo.pt/info_en.html" target="_blank" rel="noopener">Carmo — hours</a></td></tr>
+    <tr><td><a href="https://gulbenkian.pt/cam/en/welcome/" target="_blank" rel="noopener">CAM Gulbenkian — hours</a></td></tr>
+    <tr><td><a href="https://www.grutasmiradaire.com/caves/information-aboutbr-visits/2026-tour-prices-per-visitor" target="_blank" rel="noopener">Grutas de Mira de Aire — 2026 visits</a></td></tr>
+    <tr><td><a href="https://trilhos.arcosdevaldevez.pt/percursos-pedestres/percurso/pr-24-trilho-dos-socalcos-de-sistelo" target="_blank" rel="noopener">PR24 Sistelo — trail status and GPX <i>(dropped, kept for reference)</i></a></td></tr>
+  </table>
+</div></section>
+
+<footer><div class="wrap">
+  Portugal · 4–13 October 2026 · 2 adults · nine nights over five bases —
+  Porto 2, Pinhão 1, Buçaco 1, Batalha 1, Lisbon 4.
+  Built from the researched final draft, revised for the mid-range lodging brief.
+  Unverified items are marked in the text — check the sources above before booking.
+</div></footer>
+
+<script>
+(function(){
+  var boxes = Array.prototype.slice.call(document.querySelectorAll('.todo input[type=checkbox]'));
+  function progress(){
+    var done = boxes.filter(function(b){ return b.checked; }).length;
+    document.getElementById('progtext').textContent = done + ' of ' + boxes.length + ' done';
+  }
+  boxes.forEach(function(b){
+    var k = 'pt26.' + b.getAttribute('data-k');
+    try{ b.checked = localStorage.getItem(k) === '1'; }catch(e){}
+    b.addEventListener('change', function(){
+      try{ localStorage.setItem(k, b.checked ? '1' : '0'); }catch(e){}
+      progress();
+    });
+  });
+  progress();
+  document.getElementById('reset').addEventListener('click', function(){
+    boxes.forEach(function(b){
+      b.checked = false;
+      try{ localStorage.setItem('pt26.' + b.getAttribute('data-k'), '0'); }catch(e){}
+    });
+    progress();
+  });
+})();
+</script>
+</body>
+</html>
