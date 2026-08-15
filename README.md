@@ -16,8 +16,10 @@ opens from `file://` as happily as over HTTP, prints cleanly via `@media print`.
 
 The booking checklist persists ticks in `localStorage` under keys `pt26.<data-k>`. Storage
 is scoped to origin, so **the hosted copy and the local copy keep separate checklists**.
-The working copy lives at `~/Downloads/portugal-trip-2026.html`; this repo holds a snapshot
-published to Pages.
+The working copy lives at **`~/Downloads/portugal-trip-2026.html`** and **must keep that exact
+path** — the checklist ticks are keyed to it. This repo (**`~/Documents/Workspace/portugal-2026`**)
+holds a snapshot published to Pages: copy the working file over `index.html`, re-insert the robots
+meta tag before `<meta name="viewport">`, commit, push.
 
 The overview strip is a 20-column CSS grid: 10 day cells spanning 2 columns each, plus
 9 night chips offset one column (`grid-column:2i / span 2`) so each night visually
@@ -31,8 +33,8 @@ public to anyone with the URL — that tag only keeps it out of search results.
 - **No wine-focused activities.** The Douro is for scenery, not tastings. Ask for
   non-alcoholic pairings at restaurants.
 - **Minimal private drivers — inside cities only.** Self-drive between cities.
-- **One rental car only:** collected in Porto 6 Oct, dropped at LIS airport on arrival
-  Fri 9. **Lisbon is entirely car-free.**
+- **One rental car only:** collected in Porto 6 Oct 09:30, dropped at LIS airport Fri 9
+  (booked to 20:30). **Lisbon is entirely car-free.**
 - Mid-range boutique hotels / Airbnbs. Avoid Six Senses — too wine-led.
 - Cities + nature + food in roughly equal measure; moderate hiking wanted.
 - Check into the hotel on arrival day before going out.
@@ -92,7 +94,7 @@ A durable reminder is set for **20 Sept 2026** to force the decision before any 
                      House    King     Lis
 ```
 
-Key legs: Porto→Arouca (Passadiços do Paiva)→Pinhão · N222 driven both directions ·
+Key legs: Porto Boavista→Arouca 1h05 (Passadiços do Paiva)→Pinhão · N222 driven both directions ·
 Folgosa→Galafura→Viseu 1h20 · Viseu→Coimbra 1h15 · Coimbra→Tomar 1h10 ·
 Tomar→Mira de Aire→Batalha 1h10 · Batalha→Alcobaça→Nazaré 0h45 ·
 Nazaré→Óbidos→LIS 1h40.
@@ -135,25 +137,37 @@ make the bus connection (it has scaffolding anyway).
 Other closure facts baked in: **Mon 5 Oct is Implantação da República**, a national
 holiday. CAM Gulbenkian and MAAT close Tuesdays. Feira da Ladra runs Tuesdays and Saturdays.
 
-## Car rental
+## Car rental — BOOKED (15 Aug 2026)
 
-Collect **Porto city desk, Tue 6 Oct ~08:30**; drop **LIS airport, Fri 9 ~18:45**.
-Book **direct** with **Sixt** (first choice) or **Guerin** (Portuguese, often cheaper);
-Europcar, Hertz and Avis acceptable. **Avoid Goldcar, Record go, Centauro and broker
-resellers** — large deposit holds and forced insurance at the counter.
+- **Pick up:** Porto **Boavista**, Avenida da Boavista 1203, 4100-130 — **Tue 6 Oct, 09:30**
+- **Return:** **Lisbon Airport**, Alameda das Comunidades Portuguesas, 1700-111 (the return
+  area beside Terminal 1) — **Fri 9 Oct, 20:30**
+- 3 days 11 hours → **billed as 4 rental days**. One car for the whole trip; Lisbon is
+  car-free from Friday evening.
 
-The quote must include the **one-way / cross-location fee** and the **Via Verde
-transponder** (~€2/day plus tolls; Portugal has cash-free motorways and this route uses
-the A24 and A1). Full-to-full fuel only. **Automatic** — scarce in Portugal, book early.
-Compact, not larger: Pinhão's lanes, the N222 and Coimbra's upper town all reward a small
-car. Expect roughly €120–200 all-in for the three days. Confirm the Porto city desk opens
-by 08:30 — some start at 09:00, which would push the Douro departure back.
+Two knock-ons already applied to `index.html`:
+
+1. **Tue 6 shifts an hour later.** The day was built on an 08:30 city-centre collection.
+   Boavista is ~3 km west of the centre and **not walkable with bags** — metro to Casa da
+   Música then ~12 min on foot, or a 10-min Uber (~€7). New shape: 08:30 check out, 09:00
+   travel out, 09:30 collect, 11:00 Paiva (**book the 11:00 slot, not 10:00**), 14:00
+   Ponte 516, 14:45 lunch, 15:50 drive, 17:45 Pinhão, 20:00 Rabelo. The cost is the pool
+   afternoon, now about an hour. **The lever if they want it back is skipping Ponte 516.**
+2. **Fri 9 gains 1h45 of slack.** The day was written against an 18:45 hand-back with no
+   margin; the booking runs to 20:30, so **Óbidos is no longer the automatic cut**. Advice
+   given: still return around 18:45 and spend the slack on the day rather than on Óbidos,
+   because the day ends at a lockbox in an unfamiliar building. Leaving Óbidos at 19:15
+   still works and pushes dinner to ~21:30.
+
+Still to confirm on the booking: **automatic transmission**, the **Via Verde transponder**
+(Portugal's motorways are cash-free; the route uses the A32, A24 and A1), **full-to-full
+fuel**, and whether the LIS return is in the Terminal 1 car park or an off-site shuttle lot.
+The one-way fee should already be inside a Porto→Lisbon booking — check the total.
 
 ## Open items
 
 - **Decide the night of 7 Oct** (see live item) — deferred to ~20 Sept / start of October.
 - **Read the exact free-cancellation date off all three 7 Oct bookings** — now, not in October.
-- **Book the car.**
 - **Book the Biblioteca Joanina 09:00 first slot** for Thu 8 — everything else on Thursday
   hangs off it.
 - Verify the **Mosteiro da Batalha's October opening hours** (Friday starts there at 09:00)
