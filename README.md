@@ -125,8 +125,8 @@ Two structural facts that drive the above: **Conímbriga is dropped — Tomar re
 and **the Batalha monastery interior cannot be done Thursday** (you arrive 17:45, past the
 ~17:30 last admission), so it opens Friday. Tomar → caves → Batalha is the tightest chain
 in the trip; if the convent overruns, **drop the caves, not the convent**. On Friday,
-**Óbidos is the cut** if the day slips — 55 min from Lisbon, and Sat 10 is deliberately
-empty. **Alcobaça is not the cut**: it sits between Batalha and Nazaré, so the detour costs
+Óbidos *used* to be the cut if the day slipped — **the 20:30 car return removed that**, so it
+now survives a slow morning; Sat 10 is deliberately empty as the ultimate fallback. **Alcobaça is not the cut**: it sits between Batalha and Nazaré, so the detour costs
 about five minutes.
 
 **Sintra is locked to Mon 12** — all its palaces open daily, whereas DGPC/state museums
