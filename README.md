@@ -51,20 +51,32 @@ public to anyone with the URL — that tag only keeps it out of search results.
 
 Tue 13 is a Lisbon day with no night — Uber to LIS 18:45.
 
-## ⚠ Live item — two bookings on 7 Oct still need cancelling
+## ⚠ Live item — 7 Oct is booked three times, deliberately
 
-Three rooms were held for Wed 7 as a deliberate hedge. **Decided 11 Aug: they sleep in
-Coimbra.** Cancel the other two, in order:
+Three rooms are held for Wed 7. **Decision deferred (15 Aug): the traveller is holding all
+three until the start of October, while cancellation is free.** Do not push them to cancel
+now — that is their call and it is a reasonable one.
 
-1. **Vila Julieta Guesthouse** — Booking.com, 20 Alameda Conchada, Coimbra.
-   **Auto-charges**, so it has the clock on it.
-2. **Palace Hotel do Bussaco**, Luso — check its window *first*: most expensive of the
-   three and a direct hotel booking, so likely a tighter deadline and a real deposit.
+1. **Airbnb "Studio King Deluxe"**, Coimbra — **the main line.** The whole written plan
+   assumes it. Most generous cancellation window, so safe to hold longest.
+2. **Palace Hotel do Bussaco**, Luso — the only night left that could absorb the ~€700–1,000
+   of unspent splurge, which is the real argument for keeping it held. **Also the risk:**
+   direct palace bookings commonly use a **14- or 21-day** window = **23 or 16 September**
+   for a 7 Oct arrival, i.e. possibly already past by "start of October".
+3. **Vila Julieta Guesthouse** — Booking.com, 20 Alameda Conchada. **Auto-charges** when its
+   window closes, and holds no option the Airbnb doesn't hold better. Let this one go first.
+
+**What the decision drives:** not just the bed. The **Biblioteca Joanina 09:00 slot**,
+**Tomar** and the **Mira de Aire** timing all assume waking in Coimbra, so nothing on
+Thursday can be locked until this lands. Pick Bussaco and Thursday is rebuilt from scratch.
 
 **Bussaco was briefly written as the main line and reversed the same day. Don't re-argue
-it.** Coimbra buys **Tomar** (unreachable from Luso), the Coimbra evening, and the 09:00
-Joanina slot from ten minutes below the university gate. It costs the Buçaco forest walk —
-reduced to an optional 30-minute roadside stop on Wednesday — and Mealhada's leitão.
+it unasked.** Coimbra buys **Tomar** (unreachable from Luso), the Coimbra evening, and the
+09:00 Joanina slot from ten minutes below the university gate. It costs the Buçaco forest
+walk — reduced to an optional 30-minute roadside stop on Wednesday — and Mealhada's leitão.
+
+A durable reminder is set for **20 Sept 2026** to force the decision before any plausible
+14-day deadline.
 
 ## Route
 
@@ -139,7 +151,8 @@ by 08:30 — some start at 09:00, which would push the Douro departure back.
 
 ## Open items
 
-- Cancel Vila Julieta, then Bussaco (above).
+- **Decide the night of 7 Oct** (see live item) — deferred to ~20 Sept / start of October.
+- **Read the exact free-cancellation date off all three 7 Oct bookings** — now, not in October.
 - **Book the car.**
 - **Book the Biblioteca Joanina 09:00 first slot** for Thu 8 — everything else on Thursday
   hangs off it.
